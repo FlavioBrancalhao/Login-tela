@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+   
+    <script src="js.js"></script>
+    <script>
+        function wonderful(){
+    var z =document.getElementById("cor")
+    var x = document.getElementById("pass")
+        if(x.type=="password"){
+            x.type = "text";
+            
+        }else{
+            x.type = "password";
+           
+        }
+        if(z.style.color ==="black"){
+            z.style.color = "darkgrey";
+        }else{
+            z.style.color = "black";
+        }
+    }
+
+    </script>
+    <style>
+        *{
+    margin: 0;padding: 0;text-decoration: none;font-family: 'Balsamiq Sans', cursive;
+}
+.fontTitulo{
+    color: white;
+}
+.font1{
+    color: white;
+}
+body{
+    background-image:url('bgcel.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+fieldset{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    left: auto;
+    top: 30%;
+    position: absolute;
+    left: 25%;
+   border-radius: 7px;
+   padding: 15px;
+   background-color:rgba(171, 252, 32, 0.24);
+   
+}
+legend{
+    text-align: center;
+    background-color: orange;
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+.bts{
+    width: 30%;
+    height: 30px;
+    align-content: flex-end;
+    right: 0px;
+    outline: none;
+    margin-top: 10px;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+
+}
+h6{
+    text-align: center;
+    font-size: 1em;
+}
+.txs{
+    border-radius: 7px;
+    outline: none;
+    width: 100%;
+    height: 20px;
+}
+.txs2{
+    width: 80%;
+    height: 20px;
+    outline: none;
+    border-radius: 7px;
+}
+
+button{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+button:hover{
+    color: white;
+    background-color: rgba(243, 1, 1, 0.61);
+    cursor: pointer;
+}
+.bts:hover{
+    color: white;
+    background-color: rgba(255, 208, 0, 0.87);
+    cursor: pointer;
+}
+footer{
+    bottom: 0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 0.5em;
+    width: 100%;
+
+    margin: 0 auto;
+}
+.help{
+    position: absolute;
+    color: darkgrey;
+    margin-top: 4px;
+    margin-left: 4PX;
+}
+
+@media screen and (min-width: 450px) {
+ fieldset{
+     left: 35%;
+ }
+}
+
+@media screen and (min-width: 700px) {
+    fieldset{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        left: auto;
+        top: 30%;
+        position: absolute;
+        left: 60%;
+       border-radius: 7px;
+       padding: 15px;
+       background-color:rgba(171, 252, 32, 0.24);
+       
+    }
+    .txs{
+        border-radius: 7px;
+        outline: none;
+        width: 100%;
+        height: 25px;
+        font-size: 1em;
+        
+    }
+    
+    .txs2{
+        border-radius: 7px;
+        outline: none;
+        width: 80%;
+        height: 25px;
+        font-size: 1em;
+        
+    }
+  
+}
+@media screen and (min-width: 1000px) {
+    fieldset{
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+        left: auto;
+        top: 30%;
+        position: absolute;
+        left: 60%;
+       border-radius: 7px;
+       padding-left: 15px;
+       padding-top: 30px;
+       padding-right: 15px;
+       padding-bottom: 20px;
+       background-color:rgba(171, 252, 32, 0.24);
+       
+    }
+    .txs{
+        border-radius: 7px;
+        outline: none;
+        width: 100%;
+        height: 25px;
+        font-size: 1em;
+        
+    }
+    
+    .txs2{
+        border-radius: 7px;
+        outline: none;
+        width: 90%;
+        height: 25px;
+        font-size: 1em;
+        
+    }
+    .fontTitulo{
+        -webkit-text-stroke-width: 0.1px; /* largura da borda */
+        -webkit-text-stroke-color: #000;
+    }
+    .font1{
+        -webkit-text-stroke-width: 0.1px; /* largura da borda */
+        -webkit-text-stroke-color: #000;
+    }
+    
+}
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+     
+        <fieldset>
+           
+            <legend class="fontTitulo">Login</legend>
+            <h3 class="font1">Login</h3>
+            <input type="text" name="text" class="txs"><br>
+           <h3 class="font1">senha</h3>
+            <input type="password" name="senha" class="txs2" id="pass"> <a href="javascript:void(0);" onclick="wonderful()"  ><i class="fa fa-eye help" id="cor" aria-hidden="true"></i></a>
+            <input type="button" name="b" value="Entrar" class="bts">
+                <hr>
+                <h6 class="font1">sign up</h6>
+                <button><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+                <button><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</button>
+            </fieldset>
+
+    </main>
+    <footer>©Copyright NovaTec <br> Desenvolvido por Flavio Brancalhao</footer>
+</body>
+</html>
